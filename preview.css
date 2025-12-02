@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* LOGO */
+.logo {
+    position: fixed;
+    top: 20px;
+    left: 25px;
+    z-index: 999;
+}
+.logo img {
+    height: 42px;
+}
+
+/* HERO — SINGLE SOURCE OF TRUTH */
+.hero {
+    position: relative;
+    height: 90vh;
+    background: url('assets/hero-preview.jpg') center/cover no-repeat;
+}
+
+.overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.28);
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 12%;
+    left: 6%;
+    color: white;
+    max-width: 550px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin: 0 0 15px;
+}
+.hero-content p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+/* VALUE */
+.value-section {
+    padding: 80px 30px;
+    text-align: center;
+}
+.value-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+.value-box {
+    background: #fafafa;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+}
+
+/* FEATURES */
+.features-section {
+    padding: 80px 30px;
+    text-align: center;
+}
+.features-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+.feature-box {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+}
+
+/* EXPERIENCE — FIXED IMAGE */
+.experience-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+}
+
+.exp-image {
+    height: 450px;
+    background: url('assets/experience.jpg') center/cover no-repeat;
+}
+
+.exp-content {
+    padding: 60px 40px;
+}
+
+/* PRICING */
+.pricing-teaser {
+    padding: 80px 30px;
+    text-align: center;
+}
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+.pricing-box {
+    background: #fafafa;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+}
+
+/* CTA */
+.cta-section {
+    padding: 80px 30px;
+    text-align: center;
+}
+.cta-btn-primary {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #0a65d7;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-right: 15px;
+}
+.cta-btn-secondary {
+    display: inline-block;
+    padding: 14px 28px;
+    border: 2px solid #0a65d7;
+    color: #0a65d7;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+/* FOOTER */
+.footer {
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    background: #fafafa;
+}
+.footer a {
+    text-decoration: none;
+    color: #666;
+}
+
+/* LOGO */
+.logo {
+    position: fixed;
+    top: 20px;
+    left: 25px;
+    z-index: 9999;
+}
+.logo img {
+    height: 42px;
+    filter: brightness(0) invert(1); /* מבטיח לבן נקי */
+}
