@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>RetreatsOS – Make It Real</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    background: #000;
+    overflow-x: hidden;
+}
+
+/* HERO IMAGE */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('assets/hero/kayaks.png');
+    background-size: cover;
+    background-position: center; filter: brightness(1.05);
+}
+
+/* FIXED LOGO */
+.logo {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    height: 230px;
+    width: auto;
+    z-index: 20;
+}
+
+/* TEXT BLOCK */
+.hero-content {
+    position: absolute;
+    bottom: 26%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    width: 90%;
+    max-width: 800px;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.55);
+}
+
+.hero-content h1 {
+    margin: 0 0 20px;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    margin: 0 0 30px;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+/* EMAIL FORM */
+.email-form {
+    backdrop-filter: blur(14px);
+    background: rgba(255,255,255,0.18);
+    padding: 14px;
+    border-radius: 10px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.email-form input[type="email"] {
+    padding: 14px;
+    border-radius: 8px;
+    border: none;
+    width: 260px;
+    font-size: 16px;
+}
+
+.email-form button {
+    padding: 14px 22px;
+    border-radius: 8px;
+    border: none;
+    background: white;
+    color: #111;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+
+    <!-- REAL LOGO — NO CSS COLLISIONS -->
+    <img src="assets/logo/LOGO+NAME+TAG_W-TRANS.png" class="logo" alt="RetreatsOS Logo">
+
+    <div class="hero-content">
+        <h1>Create Retreats People Never Forget</h1>
+        <p>RetreatsOS turns your retreat idea into a real-world experience—beautifully, simply, effortlessly.</p>
+
+        <form class="email-form" method="POST" action="/send_lead.php">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Notify Me</button>
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
