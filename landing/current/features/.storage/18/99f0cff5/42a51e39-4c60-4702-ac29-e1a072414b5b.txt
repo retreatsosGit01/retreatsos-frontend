@@ -1,0 +1,61 @@
+$ cd /workspace && # Install zip utility first
+apt-get update && apt-get install -y zip
+
+# Create clean directory for features page
+mkdir -p features-page-export
+
+# Copy the RetreatsOS features HTML as index.html
+cp features-retreatsos.html features-page-export/index.html
+
+# Create assets folder structure
+mkdir -p features-page-export/assets
+cp -r css features-page-export/assets/
+cp -r js features-page-export/assets/
+cp -r images features-page-export/assets/
+cp -r fonts features-page-export/assets/
+
+# Update all paths to absolute /features/assets/ format
+sed -i 's|href="css/|href="/features/assets/css/|g' features-page-export/index.html
+sed -i 's|src="css/|src="/features/assets/css/|g' features-page-export/index.html
+sed -i 's|href="js/|href="/features/assets/js/|g' features-page-export/index.html
+sed -i 's|src="js/|src="/features/assets/js/|g' features-page-export/index.html
+sed -i 's|href="images/|href="/features/assets/images/|g' features-page-export/index.html
+sed -i 's|src="images/|src="/features/assets/images/|g' features-page-export/index.html
+sed -i 's|href="fonts/|href="/features/assets/fonts/|g' features-page-export/index.html
+sed -i 's|src="fonts/|src="/features/assets/fonts/|g' features-page-export/index.html
+
+# Also fix any /images/ paths that might exist
+sed -i 's|src="/images/|src="/features/assets/images/|g' features-page-export/index.html
+
+# Create the clean ZIP file
+cd features-page-export
+zip -r ../retreatsos-features-webflow-export.zip . -x "*.DS_Store"
+cd ..
+
+# Verify the ZIP structure
+echo "=== ZIP Contents ==="
+unzip -l retreatsos-features-webflow-export.zip | head -20
+
+echo "=== ZIP File Created ==="
+ls -la retreatsos-features-webflow-export.zip
+E: setgroups 65534 failed - setgroups (1: Operation not permitted)
+E: setegid 65534 failed - setegid (22: Invalid argument)
+E: seteuid 42 failed - seteuid (22: Invalid argument)
+E: setgroups 0 failed - setgroups (1: Operation not permitted)
+rm: cannot remove '/var/cache/apt/archives/partial/*.deb': Permission denied
+Reading package lists...
+W: chown to _apt:root of directory /var/lib/apt/lists/partial failed - SetupAPTPartialDirectory (22: Invalid argument)
+W: chown to _apt:root of directory /var/lib/apt/lists/auxfiles failed - SetupAPTPartialDirectory (22: Invalid argument)
+E: setgroups 65534 failed - setgroups (1: Operation not permitted)
+E: setegid 65534 failed - setegid (22: Invalid argument)
+E: seteuid 42 failed - seteuid (22: Invalid argument)
+E: setgroups 0 failed - setgroups (1: Operation not permitted)
+E: Method gave invalid 400 URI Failure message: Failed to setgroups - setgroups (1: Operation not permitted)
+E: Method gave invalid 400 URI Failure message: Failed to setgroups - setgroups (1: Operation not permitted)
+E: Method http has died unexpectedly!
+E: Sub-process http returned an error code (112)
+bash: line 32: zip: command not found
+=== ZIP Contents ===
+unzip:  cannot find or open retreatsos-features-webflow-export.zip, retreatsos-features-webflow-export.zip.zip or retreatsos-features-webflow-export.zip.ZIP.
+=== ZIP File Created ===
+ls: cannot access 'retreatsos-features-webflow-export.zip': No such file or directory

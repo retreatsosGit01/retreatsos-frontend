@@ -1,0 +1,142 @@
+$ find /workspace -type f -name "*.html" | head -10
+/workspace/401.html
+/workspace/404.html
+/workspace/about-1.html
+/workspace/about-2.html
+/workspace/about-3.html
+/workspace/blog.html
+/workspace/checkout.html
+/workspace/contact.html
+/workspace/customer-stories.html
+/workspace/detail_blog-categories.html
+$ ls -la /workspace/
+
+total 246594
+drwxr-xr-x 1568 root root 126287872 Dec  6 04:33 .
+drwxr-xr-x    1 root root       149 Dec  6 04:39 ..
+-rw-rw-r--    1 root root     31959 Dec  6 04:31 .MGXEnv.json
+drwxr-xr-x    2 root root      4096 Dec  6 04:33 .MGXTools
+drwxr-xr-x 1070 root root  56819712 Dec  6 04:32 .git
+-rw-rw-r--    1 root root      1472 Dec  6 01:52 .gitattributes
+-rw-rw-r--    1 root root       476 Dec  6 01:52 .gitignore
+-rw-r--r--    1 root root       326 Dec  6 04:33 .timeline.json
+-rw-rw-r--    1 root root      5180 Dec  6 04:31 .wiki.md
+-rw-rw-r--    1 root root      3053 Dec  6 01:52 401.html
+-rw-rw-r--    1 root root      2128 Dec  6 01:52 404.html
+-rw-rw-r--    1 root root     56581 Dec  6 01:52 about-1.html
+-rw-rw-r--    1 root root     43471 Dec  6 01:52 about-2.html
+-rw-rw-r--    1 root root     59162 Dec  6 01:52 about-3.html
+-rw-rw-r--    1 root root     35587 Dec  6 01:52 blog.html
+-rw-rw-r--    1 root root     72951 Dec  6 01:52 checkout.html
+-rw-rw-r--    1 root root     36754 Dec  6 01:52 contact.html
+drwxrwxr-x    6 root root    212992 Dec  6 01:52 css
+-rw-rw-r--    1 root root     38338 Dec  6 01:52 customer-stories.html
+-rw-rw-r--    1 root root     31591 Dec  6 01:52 detail_blog-categories.html
+-rw-rw-r--    1 root root     33512 Dec  6 01:52 detail_blog-posts.html
+-rw-rw-r--    1 root root     34337 Dec  6 01:52 detail_careers.html
+-rw-rw-r--    1 root root     46703 Dec  6 01:52 detail_category.html
+-rw-rw-r--    1 root root     35765 Dec  6 01:52 detail_customers.html
+-rw-rw-r--    1 root root     40593 Dec  6 01:52 detail_product.html
+-rw-rw-r--    1 root root      1447 Dec  6 01:52 detail_sku.html
+-rw-rw-r--    1 root root     33352 Dec  6 01:52 detail_team.html
+-rw-rw-r--    1 root root     77009 Dec  6 01:52 features-1.html
+-rw-rw-r--    1 root root     65857 Dec  6 01:52 features-2.html
+-rw-rw-r--    1 root root     65128 Dec  6 01:52 features-3.html
+-rw-rw-r--    1 root root     12057 Dec  6 01:52 features-retreatsos.html
+drwxrwxr-x    3 root root    155648 Dec  6 01:52 fonts
+-rw-rw-r--    1 root root     72758 Dec  6 01:52 home-1.html
+-rw-rw-r--    1 root root     77483 Dec  6 01:52 home-2.html
+-rw-rw-r--    1 root root     70771 Dec  6 01:52 home-3.html
+drwxrwxr-x  300 root root  11612160 Dec  6 01:52 images
+-rw-rw-r--    1 root root     62761 Dec  6 01:52 index.html
+drwxrwxr-x    3 root root   1609728 Dec  6 01:52 js
+-rw-rw-r--    1 root root     32504 Dec  6 01:52 legal.html
+-rw-rw-r--    1 root root     34943 Dec  6 01:52 order-confirmation.html
+-rw-rw-r--    1 root root     37973 Dec  6 01:52 paypal-checkout.html
+-rw-rw-r--    1 root root     46728 Dec  6 01:52 pricing-ecom.html
+-rw-rw-r--    1 root root     48021 Dec  6 01:52 pricing-static.html
+drwxrwxr-x   13 root root   1196032 Dec  6 01:52 public
+-rw-rw-r--    1 root root     35549 Dec  6 01:52 request-demo.html
+-rw-rw-r--    1 root root     16157 Dec  6 01:52 retreatsos-features-single.html
+-rw-rw-r--    1 root root  11039286 Dec  6 01:52 retreatsos-features-static.tar.gz
+-rw-rw-r--    1 root root     27947 Dec  6 01:52 search.html
+drwxrwxr-x  110 root root  11509760 Dec  6 04:33 shadcn-ui
+drwxrwxr-x    7 root root    188416 Dec  6 01:52 template
+drwxrwxr-x   23 root root  30437376 Dec  6 01:52 uploads
+$ ls -la /workspace/*.html | head -10
+
+-rw-rw-r-- 1 root root  3053 Dec  6 01:52 /workspace/401.html
+-rw-rw-r-- 1 root root  2128 Dec  6 01:52 /workspace/404.html
+-rw-rw-r-- 1 root root 56581 Dec  6 01:52 /workspace/about-1.html
+-rw-rw-r-- 1 root root 43471 Dec  6 01:52 /workspace/about-2.html
+-rw-rw-r-- 1 root root 59162 Dec  6 01:52 /workspace/about-3.html
+-rw-rw-r-- 1 root root 35587 Dec  6 01:52 /workspace/blog.html
+-rw-rw-r-- 1 root root 72951 Dec  6 01:52 /workspace/checkout.html
+-rw-rw-r-- 1 root root 36754 Dec  6 01:52 /workspace/contact.html
+-rw-rw-r-- 1 root root 38338 Dec  6 01:52 /workspace/customer-stories.html
+-rw-rw-r-- 1 root root 31591 Dec  6 01:52 /workspace/detail_blog-categories.html
+$ ls -la /workspace/css/
+
+total 123737
+drwxrwxr-x    6 root root    212992 Dec  6 01:52 .
+drwxr-xr-x 1568 root root 126287872 Dec  6 04:33 ..
+-rw-rw-r--    1 root root      7772 Dec  6 01:52 normalize.css
+-rw-rw-r--    1 root root      2314 Dec  6 01:52 retreatsos-custom.css
+-rw-rw-r--    1 root root    155387 Dec  6 01:52 retreatsos.webflow.css
+-rw-rw-r--    1 root root     38513 Dec  6 01:52 webflow.css
+$ ls -la /workspace/js/
+
+total 126466
+drwxrwxr-x    3 root root   1609728 Dec  6 01:52 .
+drwxr-xr-x 1568 root root 126287872 Dec  6 04:33 ..
+-rw-rw-r--    1 root root   1603177 Dec  6 01:52 webflow.js
+$ ls -la /workspace/images/ | head -10
+
+total 145434
+drwxrwxr-x  300 root root  11612160 Dec  6 01:52 .
+drwxr-xr-x 1568 root root 126287872 Dec  6 04:33 ..
+-rw-rw-r--    1 root root     17296 Dec  6 01:52 About-1-p-500.webp
+-rw-rw-r--    1 root root     32870 Dec  6 01:52 About-1-p-800.webp
+-rw-rw-r--    1 root root     39780 Dec  6 01:52 About-1.webp
+-rw-rw-r--    1 root root     22838 Dec  6 01:52 About-2-p-500.webp
+-rw-rw-r--    1 root root     40602 Dec  6 01:52 About-2-p-800.webp
+-rw-rw-r--    1 root root     60966 Dec  6 01:52 About-2.webp
+-rw-rw-r--    1 root root     19762 Dec  6 01:52 About-3-p-500.webp
+$ ls -la /workspace/*.html | wc -l
+
+33
+$ cd /workspace && find . -name "*.html" -maxdepth 1 | sort
+
+./401.html
+./404.html
+./about-1.html
+./about-2.html
+./about-3.html
+./blog.html
+./checkout.html
+./contact.html
+./customer-stories.html
+./detail_blog-categories.html
+./detail_blog-posts.html
+./detail_careers.html
+./detail_category.html
+./detail_customers.html
+./detail_product.html
+./detail_sku.html
+./detail_team.html
+./features-1.html
+./features-2.html
+./features-3.html
+./features-retreatsos.html
+./home-1.html
+./home-2.html
+./home-3.html
+./index.html
+./legal.html
+./order-confirmation.html
+./paypal-checkout.html
+./pricing-ecom.html
+./pricing-static.html
+./request-demo.html
+./retreatsos-features-single.html
+./search.html

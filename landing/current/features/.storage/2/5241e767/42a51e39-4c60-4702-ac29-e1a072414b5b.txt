@@ -1,0 +1,11 @@
+$ find /workspace -type f -name "*.html" | head -10
+/workspace/401.html
+/workspace/404.html
+/workspace/about-1.html
+/workspace/about-2.html
+/workspace/about-3.html
+/workspace/blog.html
+/workspace/checkout.html
+/workspace/contact.html
+/workspace/customer-stories.html
+/workspace/detail_blog-categories.html
